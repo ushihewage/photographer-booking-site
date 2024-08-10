@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap');
+
+<!-----Discription2------------------------------>
+
+*
+{
+	
+/*	box-sizing: border-box;*/
+	
+
+}
+#third
+		{
+			background-image: url(images/img2.jpg);
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+            background-size: 100% 100%;
+            padding: 0;
+            margin-top: -80px;
+		}
+.discription2
+{
+	width: 40%;
+	height: 70vh;
+	background-color: #fff;
+	margin-left: 5%;
+	margin-top: 10vh;
+/*	margin-bottom: 20vh;*/
+	margin-right: 70%;
+	opacity: 0.9;
+}
+
+.container
+{
+	width: 60%;
+	display: block;
+	margin: auto;
+	padding-top: 100px ;
+
+
+}
+
+.content-section
+{
+	float: left;
+	
+	width: 55vh;
+	font-family: 'Poppings',sans-serif;
+	color: #000;
+	text-align: center;
+
+
+}
+
+
+.content-section .title h2
+{
+	font-size: 28px;
+	text-align: center;
+	
+
+}
+.content-section .content 
+{
+	margin-top: 20px ;
+	padding-left: 5%;
+	font-family: sans-serif;
+	font-size: 20px;
+	line-height: 1.5;
+	text-align: center;
+
+}
+
+
+.content-section .button
+{
+/*	margin-top: 30px;*/
+    text-align: center;
+	line-height: 10px;
+/*	height: 70px;*/
+	width: 100%;
+
+}
+.content-section .button a
+{
+	background-color: #000080 ;
+	padding: 11 11;
+	text-decoration: none;
+	color: #fff;
+	font-size: 20px;
+	letter-spacing: 1px;
+	font-weight: strong;
+	
+}
+.content-section .button a:hover
+{
+	background-color: #ccddff ;
+	color:  #001233;
+	border: 2px solid  #001233;
+	font-weight: bold;
+
+}
+
+
+
+
+
+background-color: #000;
+            text-align: center;
+            line-height: 20px;
+            width: 50px;
+            border: none;
+            border-radius: 12px;
+            padding: 10px 4px;
+            margin-left: 50px;
+            margin-right: 50px;
+            margin-bottom: 30vh;
+            transition-duration: 0.4s;

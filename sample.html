@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+	*
+	{
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		font-family: sans-serif;
+	}
+	body
+	{
+		min-height: 100vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background:  #666666;
+
+	}
+	.respos-reg
+	{
+		position: relative;
+		max-width: 900px;
+		width: 100%;
+		border-radius: 6px;
+		padding: 30px;
+		margin: 0 15px;
+		background-color: #fff;
+		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	}
+	.respos-reg header
+	{
+		font-size: 20px;
+		font-weight: 600;
+		color: #333;
+	}
+	.respos-reg header::before
+	{
+		content: "";
+		position: absolute;
+		bottom: -2px;
+		height: 3px;
+		width: 27px;
+		border-radius: 8px;
+		background-color: #4070f4;
+		left: 0;
+	}
+	.respos-reg form
+	{
+		position: relative;
+		margin-top: 16px;
+		min-height: 490px;
+		background-color: #fff;
+
+	}
+	.respos-reg form .details
+	{
+		margin-top: 30px;
+
+	}
+	.respos-reg form .title01
+	{
+		display: block;
+		margin-bottom: 8px;
+
+		font-size: 16px;
+		font-weight: 500;
+		margin: 6px 0;
+		color: #333;
+	}
+	.respos-reg form .fields
+	{
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	form .fields .input-field
+	{
+		display: flex;
+		width: calc(100% 3 - 15px);
+		flex-direction: column;
+		margin: 4px 0;
+	}
+	.input-field label
+	{
+		font-size: 15px;
+		font-weight: 500;
+		color: #2e2e2e;
+	}
+	.input-field input{
+		outline: none;
+		font-size: 14px;
+		color: #333;
+		font-weight: 400;
+		border-radius: 5px;
+		border: 1px solid #aaa;
+		padding: 0 15px;
+		height: 42px;
+		margin: 8px 0;
+		width: 300px;
+	}
+	.input-field input:is(focus, :valid)
+	{
+		box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+	}
+	.input-field input[type="date"]
+	{
+		color: #707070;
+
+	}
+	.input-field input[type="date"]:valid
+	{
+		color: #333;
+	}
+	#type-Shoot
+	{
+		outline: none;
+		font-size: 14px;
+		color: #333;
+		font-weight: 400;
+		border-radius: 5px;
+		border: 1px solid #aaa;
+		padding: 0 15px;
+		height: 42px;
+		margin: 8px 0;
+		width: 300px;
+	}
+ 
+	#alternative
+	{
+		outline: none;
+		font-size: 14px;
+		color: #333;
+		font-weight: 400;
+		border-radius: 5px;
+		border: 1px solid #aaa;
+		padding: 0 15px;
+		height: 42px;
+		margin: 8px 0;
+		width: 300px;
+	}
+	.Submit02
+	{
+		outline: none;
+		font-size: 14px;
+		color: #333;
+		font-weight: 400;
+		border-radius: 5px;
+		border: 1px solid #aaa;
+		padding: 0 15px;
+		align-items: center;
+		height: 42px;
+/*		margin: 8px 0;*/
+    margin-left: 20vw ;
+    cursor: pointer;
+    width: 150px;
+	}
+	.Submit02:hover
+        {
+        	background-color: #000033;
+        	color: #fff;
+        }
+
+	</style>
+</head>
+<body>
+	<!-- registration form -->
+<div class="respos-reg">
+  <header>
+    Book your personal photographer
+  </header>
+  
+    
+  
+  <form action="#">
+    <div class="details">
+      <span class="title01">
+        Fill out the form below and an agent will get in touch with you to discuss your expectation and further details.
+        <br>
+        
+      </span>
+      <div class="fields">
+        <div class="input-field">
+          <label>Your Full Name:</label><br>
+          <input type="text" placeholder="Enter your name"name="name" required>
+          
+        </div>
+        <div class="input-field">
+          <label>E-Mail:</label><br>
+          <input type="E-Mail" placeholder="Enter email address"name="email" required>
+          
+        </div>
+        <div class="input-field">
+          <label>Contact No:</label><br>
+          <input type="tel" placeholder="Mobile number"name="mobile" required>
+          
+        </div>
+        
+        <div class="input-field">
+          <label>Whatsapp:</label><br>
+          <input type="tel" placeholder="Whatsapp number"name="wApp" required>
+          
+        </div>
+        <div class="input-field">
+          <label>Confirm Location(city):</label><br>
+          <input type="text" placeholder="location"name="location" required>
+          
+        </div>
+        <div class="input-field">
+          <label>Select the tpye of photoshoot</label><br>
+          <select id="type-Shoot" name="shoot" required>
+          	<option value="portrait">Portrait photoshoot</option>
+          	<option value="couple">Couple photoshoot</option>
+          	<option value="lifestyle">LifeStyle photshoot</option>
+          	<option value="fashion">Fashion photoshoot</option>
+          
+          </select>
+          
+        </div>
+         <div class="input-field">
+          <label>Preffered date for photoshoot:</label><br>
+          <input type="date" placeholder="date"name="date" required>
+          
+        </div>
+        <div class="input-field">
+          <label>If this date is not available are there<br> any alternative dates that would be ok?</label><br>
+          <select id="alternative" name="alt" required>
+          	<option value="yes">Yes</option>
+          	<option value="no">No	</option>
+          
+          
+          </select>
+          
+        </div>
+      </div>
+<br>
+      <a href="#"><button class="Submit02">Submit</button>
+      </a>
+    </div>
+    
+  </form>
+  
+</div>
+
+	
+
+</body>
+</html>
